@@ -4,7 +4,7 @@
 
 This repository documents my work for the Pixabay API Practice Lab. In this lab I built four different search requests against the Pixabay REST API — three against the video endpoint (`https://pixabay.com/api/videos/`) and one against the photo endpoint (`https://pixabay.com/api/`) — using `curl` to send each request and reading the JSON response that came back. Each challenge below shows the parameters I used, the full request, and a screenshot of the response.
 
-My API key has been redacted from every screenshot below and replaced with `YOUR_API_KEY` in any URL shown as text.
+My API key has been redacted from every screenshot below and replaced with `57360494-9d6a6b0e9b0593140f4650123` in any URL shown as text.
 
 ---
 
@@ -21,7 +21,7 @@ My API key has been redacted from every screenshot below and replaced with `YOUR
 
 **Request:**
 ```
-curl "https://pixabay.com/api/videos/?key=YOUR_API_KEY&q=rocket+launch&category=science&editors_choice=true&per_page=3"
+curl "https://pixabay.com/api/videos/?key=57360494-9d6a6b0e9b0593140f4650123&q=rocket+launch&category=science&editors_choice=true&per_page=3"
 ```
 
 **Response:**
@@ -45,7 +45,7 @@ The response returned 3 total hits, all tagged with rocket/space/science-related
 
 **Request:**
 ```
-curl "https://pixabay.com/api/videos/?key=YOUR_API_KEY&q=basketball&category=sports&order=latest&per_page=3"
+curl "https://pixabay.com/api/videos/?key=57360494-9d6a6b0e9b0593140f4650123&q=basketball&category=sports&order=latest&per_page=3"
 ```
 
 **Response:**
@@ -75,12 +75,12 @@ Unlike the previous two challenges, this section lists each query parameter indi
 
 **Assembled request URL:**
 ```
-https://pixabay.com/api/videos/?key=YOUR_API_KEY&q=forest&category=backgrounds&editors_choice=true&order=latest&per_page=3
+https://pixabay.com/api/videos/?key=57360494-9d6a6b0e9b0593140f4650123&q=forest&category=backgrounds&editors_choice=true&order=latest&per_page=3
 ```
 
 **Request:**
 ```
-curl "https://pixabay.com/api/videos/?key=YOUR_API_KEY&q=forest&category=backgrounds&editors_choice=true&order=latest&per_page=3"
+curl "https://pixabay.com/api/videos/?key=57360494-9d6a6b0e9b0593140f4650123&q=forest&category=backgrounds&editors_choice=true&order=latest&per_page=3"
 ```
 
 **Response:**
@@ -104,7 +104,7 @@ The response returned 10 total hits, all nature/waterfall/forest-themed clips co
 
 **Request:**
 ```
-curl -s "https://pixabay.com/api/?key=YOUR_API_KEY&q=road+forest&image_type=photo&category=nature&editors_choice=true&per_page=3" | head -n 30
+curl -s "https://pixabay.com/api/?key=57360494-9d6a6b0e9b0593140f4650123&q=road+forest&image_type=photo&category=nature&editors_choice=true&per_page=3" | head -n 30
 ```
 
 The output was piped through `head -n 30` since photo JSON responses can run long, and only the top 30 lines were required.
